@@ -1,0 +1,14 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Controler_Inputs\Player_Shooting.cs">
+    <Files>
+      <File FileName="Assets\Scripts\Controler_Inputs\Xbox360_Controls.cs" Line="3" Column="1" />
+      <File FileName="Assets\Scripts\AI\MoveForward.cs" Line="4" Column="39" />
+      <File FileName="Assets\Scripts\Controler_Inputs\Player_Shooting.cs" Line="3" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

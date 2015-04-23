@@ -3,8 +3,12 @@ using System.Collections;
 
 public class Xbox360_Controls : MonoBehaviour {
 
-	public float PlayerMovementSpeed = 30;
+	public float PlayerMovementSpeed = 6.0f;
 	public float PlayerRotationSpeed = 180;
+
+
+	public string HorizontalAxis = "Horizontal";
+	public string VerticalAxis = "Vertical";
 
 	// Use this for initialization
 	void Start () {
@@ -21,12 +25,10 @@ public class Xbox360_Controls : MonoBehaviour {
 
 	void Movement ()
 	{
-		transform.Translate (0, 0,Input.GetAxis ("Vertical") * Time.deltaTime * PlayerMovementSpeed);
+		transform.position += (Vector3.right * Input.GetAxis (HorizontalAxis) + Vector3.forward * Input.GetAxis (VerticalAxis)).normalized *PlayerMovementSpeed* Time.deltaTime;
 
-		transform.Translate (Input.GetAxis ("Horizontal") * Time.deltaTime * PlayerMovementSpeed,0,0);
-
-		transform.Rotate (0,Input.GetAxis ("RightStick") * Time.deltaTime * PlayerRotationSpeed,0);
 	}
+
 
 	void UserInputs()
 	{
